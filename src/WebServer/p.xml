@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<persons>
+    <person>
+        <name>邓玉文</name>
+        <age>22</age>
+    </person>
+    <person>
+        <name>何佳楠</name>
+        <age>22</age>
+    </person>
+</persons>
