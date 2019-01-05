@@ -1,0 +1,10 @@
+GET / HTTP/1.1
+Host: localhost:8888
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-8dfa6139=6b40cc94-232a-484b-b701-59ba76f5ec10; Idea-56769f1b=d002abaa-9657-40ac-80ad-cac153ab6cc4; Webstorm-201dcd3=3e43f163-cdea-4f6a-affa-5ff32338d23d

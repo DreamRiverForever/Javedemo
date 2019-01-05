@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<web-app>
+    <servlet>
+        <servlet-name>login</servlet-name>
+        <servlet-class>WebServer.Login</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>login</servlet-name>
+        <url-patten>/login</url-patten>
+        <url-patten>/g</url-patten>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>reg</servlet-name>
+        <servlet-class>WebServer.Register</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>reg</servlet-name>
+        <url-patten>/reg</url-patten>
+    </servlet-mapping>
+</web-app>
