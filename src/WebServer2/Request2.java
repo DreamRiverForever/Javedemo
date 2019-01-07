@@ -11,11 +11,11 @@ import java.util.*;
  */
 public class Request2 {
     //协议信息
-    private String requestInfo;
+    private String requestInfo="";
     //请求方式
-    private String method;
+    private String method="";
     //请求url
-    private String url;
+    private String url="";
 
     public String getMethod() {
         return method;
@@ -30,7 +30,7 @@ public class Request2 {
     }
 
     //请求参数
-    private String queryStr;
+    private String queryStr ="";
     private final String CRLF = "\r\n";
 
     //存储参数
@@ -48,21 +48,18 @@ public class Request2 {
         try {
             len = is.read(bytes);
             this.requestInfo = new String(bytes,0,len);
-
         } catch (IOException e) {
+            System.out.println(len);
             e.printStackTrace();
-            return;
         }
         paeseRequest();
     }
 
     private void paeseRequest(){
-        System.out.println("获取请求方式---到第一个  /  ");
         this.method = this.requestInfo.substring(0,this.requestInfo.indexOf("/")).trim();
-        System.out.println("获取请求url---第一个 / 到 HTTP/ ");
         int idx = this.requestInfo.indexOf("/")+1;
         int endIdx = this.requestInfo.indexOf("HTTP/");
-        this.url = this.requestInfo.substring(idx,endIdx);
+        this.url = this.requestInfo.substring(idx,endIdx).trim();
         //如果中间有请求参数？，要分割
         int queryIdx = url.indexOf("?");
         if (queryIdx>=0){

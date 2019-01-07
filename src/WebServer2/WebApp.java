@@ -13,7 +13,7 @@ public class WebApp {
             SAXParser parser = factory.newSAXParser();
             WebHandler handler = new WebHandler();
 
-            parser.parse(Thread.currentThread().getContextClassLoader().getResourceAsStream("WebServer/webserver.xml"),handler);
+            parser.parse(Thread.currentThread().getContextClassLoader().getResourceAsStream("WebServer2/webserver.xml"),handler);
             List<Enter> enters = handler.getEnters();
             List<Mapping> mappings = handler.getMappings();
             webContent = new WebContent(enters,mappings);

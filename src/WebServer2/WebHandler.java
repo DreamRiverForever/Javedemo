@@ -22,7 +22,6 @@ public class WebHandler extends DefaultHandler {
 
     @Override
     public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
-        System.out.println(qName+"-->解析开始"+tag);
         if (qName!=null){
             tag = qName;
         }
@@ -64,7 +63,6 @@ public class WebHandler extends DefaultHandler {
 
     @Override
     public void endElement(String uri, String localName, String qName) throws SAXException {
-        System.out.println(qName+"-->解析结束"+tag);
         if (qName.equals("servlet")){
             enters.add(enter);
         }else if (qName.equals("servlet-mapping")){
@@ -75,7 +73,6 @@ public class WebHandler extends DefaultHandler {
 
     @Override
     public void endDocument() throws SAXException {
-        System.out.println("解析文档结束");
     }
     public List<Enter> getEnters() {
         return enters;

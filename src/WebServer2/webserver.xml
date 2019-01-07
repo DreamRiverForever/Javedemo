@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <web-app>
+
     <servlet>
         <servlet-name>login</servlet-name>
         <servlet-class>WebServer2.Login</servlet-class>
@@ -8,7 +9,10 @@
         <servlet-name>login</servlet-name>
         <url-patten>/login</url-patten>
         <url-patten>/g</url-patten>
+        <url-patten>/hahaha</url-patten>
     </servlet-mapping>
+
+
     <servlet>
         <servlet-name>reg</servlet-name>
         <servlet-class>WebServer2.Register</servlet-class>
@@ -16,5 +20,15 @@
     <servlet-mapping>
         <servlet-name>reg</servlet-name>
         <url-patten>/reg</url-patten>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>other</servlet-name>
+        <servlet-class>WebServer2.OtherServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>other</servlet-name>
+        <url-patten>/o</url-patten>
     </servlet-mapping>
 </web-app>
